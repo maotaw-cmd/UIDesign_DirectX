@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{A1B2C3D4-E5F6-47A8-9B10-111213141516}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files"><UniqueIdentifier>{B1C2D3E4-F5A6-47B8-9C10-212223242526}</UniqueIdentifier></Filter>
+    <Filter Include="Feature Modules"><UniqueIdentifier>{C1D2E3F4-A5B6-47C8-9D10-313233343536}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\Application.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\Config.cpp"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Application.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\Common.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\Config.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\CustomizationUI.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\EmbeddedCharacterMesh.h"><Filter>Header Files</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Modules\AppState.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\UIWidgets.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\DirectXRenderer.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\ConfigUI.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\SoundWalkUI.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\VisualControlsUI.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\VisualRenderer.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\MainRender.inc"><Filter>Feature Modules</Filter></None>
+    <None Include="src\Modules\Application.inc"><Filter>Feature Modules</Filter></None>
+  </ItemGroup>
+</Project>
