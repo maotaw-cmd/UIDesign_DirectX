@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup><Filter Include="Source Files"><UniqueIdentifier>{C5A23607-5E63-43B5-A0C2-241D370E3152}</UniqueIdentifier></Filter><Filter Include="Header Files"><UniqueIdentifier>{B6D00670-91D0-4EB0-8D87-A202DD28A796}</UniqueIdentifier></Filter></ItemGroup>
+  <ItemGroup><ClCompile Include="main.cpp"><Filter>Source Files</Filter></ClCompile><ClCompile Include="PreviewRenderer.cpp"><Filter>Source Files</Filter></ClCompile></ItemGroup>
+  <ItemGroup><ClInclude Include="PreviewRenderer.h"><Filter>Header Files</Filter></ClInclude><ClInclude Include="EmbeddedCharacterMesh.h"><Filter>Header Files</Filter></ClInclude></ItemGroup>
+</Project>
