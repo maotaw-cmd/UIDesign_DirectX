@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{B54F3315-3E52-441A-A5A2-00A35A4E4100}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files"><UniqueIdentifier>{3C15B5EC-9AB8-4F10-977A-4F8C5BC8C42F}</UniqueIdentifier></Filter>
+    <Filter Include="Documentation"><UniqueIdentifier>{8BEA52AD-E5F1-4FC1-881D-872A9E94D9D2}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\App.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\Draw.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\Window.cpp"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\App.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="include\AppConfig.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="include\Draw.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="include\Models.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="include\Window.h"><Filter>Header Files</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup><None Include="README.md"><Filter>Documentation</Filter></None><None Include="include\README_CUSTOMIZATION.txt"><Filter>Documentation</Filter></None></ItemGroup>
+</Project>
