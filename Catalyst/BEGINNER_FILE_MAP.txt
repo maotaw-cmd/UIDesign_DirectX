@@ -1,0 +1,10 @@
+COLOURS / DEFAULTS    src/CustomizationUI.h
+MENU CONTROLS         src/Modules/VisualControlsUI.inc
+BOX / HEALTH BAR      src/Modules/VisualRenderer.inc
+SOUND WALK            src/Modules/SoundWalkUI.inc
+CONFIG MENU           src/Modules/ConfigUI.inc
+UI HELPERS            src/Modules/UIWidgets.inc
+DIRECTX / 3D MODEL    src/Modules/DirectXRenderer.inc
+DRAW ORDER            src/Modules/MainRender.inc
+WINDOW / INPUT        src/Modules/Application.inc
+APP DATA              src/Modules/AppState.inc
