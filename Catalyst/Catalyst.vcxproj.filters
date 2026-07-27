@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{6E5A441B-C9DB-4182-B848-E09B8275D28A}</UniqueIdentifier></Filter>
+    <Filter Include="Core"><UniqueIdentifier>{C383FDB5-1B85-48C9-8D91-46249BB970DF}</UniqueIdentifier></Filter>
+    <Filter Include="Config"><UniqueIdentifier>{A187361F-531A-4B30-B8D3-C4EF5E38A254}</UniqueIdentifier></Filter>
+    <Filter Include="Renderer"><UniqueIdentifier>{8F2DB9F6-428B-4F1A-BF37-61BD8A258ECF}</UniqueIdentifier></Filter>
+    <Filter Include="UI"><UniqueIdentifier>{E5877075-43BC-4EF7-A5BC-2B45E9A23305}</UniqueIdentifier></Filter>
+    <Filter Include="Application"><UniqueIdentifier>{41B9E123-598C-471C-A10F-7AAF9F923592}</UniqueIdentifier></Filter>
+    <Filter Include="Documentation"><UniqueIdentifier>{6CB710C3-52AC-49E6-8D8F-8A1F46BD553F}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Core\ProjectCore.hpp"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Config\ConfigManager.hpp"><Filter>Config</Filter></ClInclude>
+    <ClInclude Include="src\Config\ConfigUI.hpp"><Filter>Config</Filter></ClInclude>
+    <ClInclude Include="src\Renderer\DirectXRenderer.hpp"><Filter>Renderer</Filter></ClInclude>
+    <ClInclude Include="src\UI\SoundWalkSettings.hpp"><Filter>UI</Filter></ClInclude>
+    <ClInclude Include="src\UI\VisualsUI.hpp"><Filter>UI</Filter></ClInclude>
+    <ClInclude Include="src\App\Application.hpp"><Filter>Application</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Renderer\EmbeddedCharacterMesh.inl"><Filter>Renderer</Filter></None>
+    <None Include="README.md"><Filter>Documentation</Filter></None>
+    <None Include="EDITING_GUIDE.md"><Filter>Documentation</Filter></None>
+    <None Include="build.bat"><Filter>Documentation</Filter></None>
+  </ItemGroup>
+</Project>
