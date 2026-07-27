@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{8FB7C349-34F1-42D7-A759-39BB47F0C32E}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files"><UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier></Filter>
+    <Filter Include="Pages"><UniqueIdentifier>{E927C1B9-6120-4D12-A8F0-8215B92A708A}</UniqueIdentifier></Filter>
+    <Filter Include="UI"><UniqueIdentifier>{A5D912BE-9DA4-43F1-AAD3-72D795B64B35}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup><ClCompile Include="main.cpp"><Filter>Source Files</Filter></ClCompile><ClCompile Include="PreviewRenderer.cpp"><Filter>Source Files</Filter></ClCompile></ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreviewRenderer.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="EmbeddedCharacterMesh.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="BeginnerCustomization.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="UI\DrawFunctions.inl"><Filter>UI</Filter></ClInclude>
+    <ClInclude Include="Pages\AimbotPage.inl"><Filter>Pages</Filter></ClInclude>
+    <ClInclude Include="Pages\VisualsPage.inl"><Filter>Pages</Filter></ClInclude>
+    <ClInclude Include="Pages\MiscPage.inl"><Filter>Pages</Filter></ClInclude>
+    <ClInclude Include="Pages\SettingsPage.inl"><Filter>Pages</Filter></ClInclude>
+  </ItemGroup>
+</Project>
