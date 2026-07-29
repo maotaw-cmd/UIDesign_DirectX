@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{A4D5E63C-6B71-45EC-96D3-81AA9D6E1777}</ProjectGuid>
+    <RootNamespace>MaotawUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v143</PlatformToolset><WholeProgramOptimization>true</WholeProgramOptimization><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup><TargetName>MaotawUI</TargetName></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><LinkIncremental>true</LinkIncremental><OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir><IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><LinkIncremental>false</LinkIncremental><OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir><IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir></PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile><WarningLevel>Level3</WarningLevel><SDLCheck>true</SDLCheck><PreprocessorDefinitions>_DEBUG;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions><ConformanceMode>true</ConformanceMode><LanguageStandard>stdcpp17</LanguageStandard></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><GenerateDebugInformation>true</GenerateDebugInformation><AdditionalDependencies>d2d1.lib;dwrite.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile><WarningLevel>Level3</WarningLevel><FunctionLevelLinking>true</FunctionLevelLinking><IntrinsicFunctions>true</IntrinsicFunctions><SDLCheck>true</SDLCheck><PreprocessorDefinitions>NDEBUG;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions><ConformanceMode>true</ConformanceMode><LanguageStandard>stdcpp17</LanguageStandard></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><EnableCOMDATFolding>true</EnableCOMDATFolding><OptimizeReferences>true</OptimizeReferences><GenerateDebugInformation>true</GenerateDebugInformation><AdditionalDependencies>d2d1.lib;dwrite.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="App\Application.cpp" />
+    <ClCompile Include="App\Render.cpp" />
+    <ClCompile Include="App\WindowProc.cpp" />
+    <ClCompile Include="Features\ConfigSystem.cpp" />
+    <ClCompile Include="Pages\ProfilePage.cpp" />
+    <ClCompile Include="Pages\SettingsPage.cpp" />
+    <ClCompile Include="Pages\VisualsPage.cpp" />
+    <ClCompile Include="Rendering\Renderer.cpp" />
+    <ClCompile Include="UI\Controls.cpp" />
+    <ClCompile Include="User\CustomPage.cpp" />
+    <ClCompile Include="User\UserLogic.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharacterPreviewMesh.h" />
+    <ClInclude Include="Core\App.h" />
+    <ClInclude Include="Core\Types.h" />
+    <ClInclude Include="User\UserLogic.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\character.glb"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_00.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_01.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_02.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_03.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_04.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_05.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_06.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_07.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_08.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_09.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_10.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_11.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_12.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_13.png"><DeploymentContent>true</DeploymentContent></None>
+    <None Include="Assets\Textures\texture_14.png"><DeploymentContent>true</DeploymentContent></None>
+  </ItemGroup>
+  <Target Name="CopyAssets" AfterTargets="Build">
+    <ItemGroup><AssetFiles Include="$(ProjectDir)Assets\**\*.*" /></ItemGroup>
+    <Copy SourceFiles="@(AssetFiles)" DestinationFiles="@(AssetFiles->'$(OutDir)Assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
